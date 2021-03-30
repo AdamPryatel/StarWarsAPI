@@ -6,18 +6,22 @@
         <title>Wikipedia Loader</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!--   <link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Enter the subject and press submit to get info from Wikipedia</h1>
-            <input type="text" id="user-input-field" required>&nbsp;
-            <button type="button" onclick="getUserInput()">Submit</button>
+        <div class="search-box">
+            <h1>Wikipedia Search</h1>
+            <form>
+            <input class="search-box" id="text-field">
+            <br><br>
+            <button class="btn btn-default" id="searchArticle">Search</button>
+            <button class="btn btn-default" id="randomArticle">I'm feeling lucky</button>
+            </form>
+        </div>
+            <div id="content">
 
-            <div class ="loader" id ="resultLoader"></div>
-            <article id="resultArticle">
-
-            </article>
-        
+            </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
