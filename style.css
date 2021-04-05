@@ -1,28 +1,51 @@
+*{
+    color: #fff;
+}
+
 body{
-    text-align: center;
+width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url("https://i.ibb.co/G7KwLGs/bg.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-family: 'Muli', sans-serif;
+   background-attachment: fixed;
 }
-h1{
-    font-size: 72px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+header{
+    padding-top: 5px;
 }
-.search-box{
-    display: inline;
+
+#buttons{
     text-align: center;
     width: 400px;
     padding: 0.5em;
+    margin: 5%;
 }
-.content-box{
-    margin-top: 20px;
-    display: inline-block;
-    background: #f9f9f9;
-    border-left: 5px solid gray;
-    border-radius: 15px 0 15px 0; 
-    text-align: left;
-    width: 70%;
-    overflow: hidden;
+
+.card{
+    box-shadow:  0 4px 8px 0 #000;
+    padding: 2px 16px;
+    width: 600px;
 }
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 #000;
+}
+
+.btn-group{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
     
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }

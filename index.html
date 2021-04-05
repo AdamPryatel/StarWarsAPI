@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Wikipedia Loader</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="search-box">
-            <h1>Search</h1>
-            <form>
-            <input class="search-box" id="text-field" placeholder="Search Bar!">
-            <br><br>
-            <button class="btn btn-default" id="submit">Submit</button>
-            <button class="btn btn-default" id="randomArticle">I'm feeling lucky</button>
-            </form>
-        </div>
-            <div id="content">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarWars API</title>
+    <link rel="stylesheet" href ="style.css">
+</head>
+<body>
+    <section class = "container">
+        <header class = text-center>
+            <a href = "https://swapi.co"></a>
+        </header>
+        <div id = "buttons">
+            <div class = "btn-group">
+                    <label class = "radioButton">
+                        <input type = "radio" name = "option" id = "films" autocomplete="off" value = "films"/>Films
+                    </label>
+                    <label class = "radioButton">
+                        <input type = "radio" name = "option" id = "people" autocomplete="off" value = "people"/>Characters
+                    </label>
+                    <label class = "radioButton">
+                        <input type = "radio" name = "option" id = "starships" autocomplete="off" value = "starships"/>Starships
+                    </label>
             </div>
+        </div>
+        <div id = "results">
+
+        </div>
+    </section>
+        <script src = "app1.js"></script>
         <script src="app.js"></script>
     </body>
-</html>
