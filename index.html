@@ -12,22 +12,24 @@
             <a href = "https://swapi.co"></a>
         </header>
         <div id = "buttons">
-            <div class = "btn-group">
-                    <label class = "radioButton">
-                        <input type = "radio" name = "option" id = "films" autocomplete="off" value = "films"/>Films
-                    </label>
-                    <label class = "radioButton">
-                        <input type = "radio" name = "option" id = "people" autocomplete="off" value = "people"/>Characters
-                    </label>
-                    <label class = "radioButton">
-                        <input type = "radio" name = "option" id = "starships" autocomplete="off" value = "starships"/>Starships
-                    </label>
-            </div>
+            <nav>
+                <div class = "btn-group">
+                        <label class = "radioButton" id = "film">
+                            <input type = "radio" name = "option" id = "films" autocomplete="off" value = "films"/>Films
+                        </label>
+                        <label class = "radioButton" id="character">
+                            <input type = "radio" name = "option" id = "people" autocomplete="off" value = "people"/>Characters
+                        </label>
+                        <label class = "radioButton" id = "ship">
+                            <input type = "radio" name = "option" id = "starships" autocomplete="off" value = "starships"/>Starships
+                        </label>
+                </div>
+            </nav>
         </div>
         <div id = "results">
 
         </div>
     </section>
         <script src = "app1.js"></script>
-        <script src="app.js"></script>
+        <!-- <script src="app.js"></script> -->
     </body>
